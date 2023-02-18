@@ -1,13 +1,27 @@
-name: Hello World
-on: [push]
+# title: Website Name
+# description: A website for sharing content
+# tags:
+#   - technology
+#   - innovation
+#   - creativity
+# name: [Birendra kumar mahto,i am from Bokaro]
+
+# student:
+#   name: "Birendra mahto"
+#   city: "bokaro"
+#   age: 23
+#   branch: computer science
+#   marks: [hindi: 67,english: 78,result: "pass"]
+
+name: Print Node Version
+on: push
 jobs:
-  build:
+  print-version:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "Hello, World!"
-             echo "I am Birendra Mahto"
-             echo "I am from Bokaro Jharkhand"
-      - name: Wish
-        run: echo "Good morning"
-             echo "What are you doing here ?"
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Print Node Version
+        run: node -v
