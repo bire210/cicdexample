@@ -14,7 +14,9 @@
 #   marks: [hindi: 67,english: 78,result: "pass"]
 
 name: Print Node Version
-on: push
+on:
+  push:
+      branches: [main]
 jobs:
   print-version:
     runs-on: ubuntu-latest
