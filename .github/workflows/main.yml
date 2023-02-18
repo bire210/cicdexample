@@ -7,5 +7,7 @@ jobs:
       - name: Say Hello
         run: echo "Hello, World!"
              echo "I am Birendra Mahto"
+             echo "I am from Bokaro Jharkhand"
       - name: Wish
         run: echo "Good morning"
+             echo "What are you doing here ?"
