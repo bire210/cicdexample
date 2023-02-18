@@ -30,6 +30,6 @@ jobs:
       - name: Print PWD
         run: pwd
       - name: Print 
-        run : npx eslint .
-        
+        run : npx eslint 
+
       
