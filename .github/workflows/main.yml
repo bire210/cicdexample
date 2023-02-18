@@ -6,3 +6,6 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello, World!"
+        run: echo "I am Birendra Mahto"
+      - name: Wish
+        run: echo "Good morning"
