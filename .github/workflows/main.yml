@@ -29,4 +29,7 @@ jobs:
         run: node -v
       - name: Print PWD
         run: pwd
+      - name: Print 
+        run : npx eslint .
+        
       
